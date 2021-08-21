@@ -1,0 +1,21 @@
+.group-menu-item {
+	display: flex;
+	align-items: center;
+	padding: 1rem 2.5rem;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.15s ease all;
+}
+
+.group-menu-item:hover {
+	background-color: rgb(241, 241, 241);
+}
+
+.group-menu-item:active {
+	background-color: #fff;
+}
+
+.folder-icon {
+	font-size: 1.8rem;
+	margin-right: 1rem;
+}

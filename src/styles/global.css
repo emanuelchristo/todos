@@ -13,6 +13,8 @@
 	--light-violet: rgba(178, 125, 253, 0.4);
 	--light-blue: rgba(85, 184, 255, 0.4);
 	--light-green: rgba(69, 221, 117, 0.4);
+
+	--border-color: #c9c9c9;
 }
 
 * {
@@ -46,4 +48,28 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.yellow-color {
+	color: var(--yellow);
+}
+.red-color {
+	color: var(--red);
+}
+.pink-color {
+	color: var(--pink);
+}
+.violet-color {
+	color: var(--violet);
+}
+.blue-color {
+	color: var(--blue);
+}
+.green-color {
+	color: var(--green);
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: 600;
 }

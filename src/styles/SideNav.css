@@ -1,0 +1,79 @@
+.sidenav {
+	width: 25vw;
+	height: 100vh;
+	border-right: 1px solid var(--border-color);
+	display: flex;
+	flex-flow: column;
+	/* overflow: hidden; */
+	flex-shrink: 0;
+}
+
+.sidenav-top {
+	border-bottom: 1px solid var(--border-color);
+	padding: 1.5rem 0;
+}
+
+.logo-wrapper {
+	padding: 2.5rem;
+}
+
+.logo-wrapper img {
+	height: 24px;
+}
+
+.logo-spacer {
+	height: 40px;
+}
+
+.groups-title-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.5rem;
+	padding-bottom: 1.5rem;
+	flex-shrink: 0;
+}
+
+.new-group-button {
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--border-color);
+	background-color: #fff;
+	border-radius: 100%;
+	cursor: pointer;
+	transition: 0.15s ease all;
+	position: relative;
+}
+
+.new-group-icon {
+	font-size: 1.25rem;
+}
+
+.new-group-button:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+}
+
+.new-group-button:active {
+	top: 2px;
+}
+
+.groups-container {
+	display: flex;
+	flex-flow: column;
+	flex: 1;
+	overflow: scroll;
+}
+
+.sidenav-bottom {
+	flex-shrink: 0;
+	height: 80px;
+	border-top: 1px solid var(--border-color);
+	padding: 0 2.5rem;
+	display: flex;
+	align-items: center;
+}
