@@ -1,0 +1,19 @@
+.sort-container {
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+.sort-select {
+	height: 100%;
+	width: 170px;
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--border-color);
+	outline: none;
+}
+
+.sort-icon {
+	font-size: 1.8rem;
+	margin-left: 0.75rem;
+}

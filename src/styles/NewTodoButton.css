@@ -1,0 +1,29 @@
+.new-todo-button {
+	padding: 0.8rem 1.6rem;
+	background-color: #fff;
+	border: 1px solid var(--border-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	font-size: 0.95rem;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	transition: 0.15s ease all;
+}
+
+.new-todo-button:hover {
+	color: #fff;
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.new-todo-button:active {
+	top: 2px;
+}
+
+.new-todo-icon {
+	font-size: 1.25rem;
+	margin-right: 0.75rem;
+}

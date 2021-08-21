@@ -1,10 +1,11 @@
-import '../styles/GroupMenuItem.css'
+import '../styles/GroupHeading.css'
 
 function GroupMenuItem({ group }) {
 	return (
-		<div className="group-menu-item">
+		<div className="group-heading-container">
 			<span className={`iconify folder-icon ${group.color}-color`} data-icon="mdi:folder"></span>
-			{group.name}
+			<h2>{group.name}</h2>
+			<span className="iconify edit-icon" data-icon="mdi:pencil"></span>
 		</div>
 	)
 }

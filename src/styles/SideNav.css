@@ -43,6 +43,7 @@
 	border: 1px solid var(--border-color);
 	background-color: #fff;
 	border-radius: 100%;
+	outline: none;
 	cursor: pointer;
 	transition: 0.15s ease all;
 	position: relative;

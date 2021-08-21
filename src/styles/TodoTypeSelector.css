@@ -1,0 +1,28 @@
+.todo-type-selector {
+	width: 290px;
+	height: 50px;
+	display: flex;
+	border: 1px solid var(--border-color);
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.todo-type-item {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	border-right: 1px solid var(--border-color);
+	cursor: pointer;
+}
+
+.todo-type-item:last-child {
+	border-right: none;
+}
+
+.todo-type-selected {
+	background-color: var(--primary-color);
+	color: #fff;
+}

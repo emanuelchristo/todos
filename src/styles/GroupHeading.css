@@ -1,0 +1,23 @@
+.group-heading-container {
+	display: flex;
+	align-items: center;
+}
+
+.group-heading-container .folder-icon {
+	font-size: 2.75rem;
+}
+
+.group-heading-container .edit-icon {
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: #000;
+	cursor: pointer;
+	position: relative;
+	transition: 0.15s ease all;
+}
+.group-heading-container .edit-icon:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+.group-heading-container .edit-icon:active {
+	top: 2px;
+}
