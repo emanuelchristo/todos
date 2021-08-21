@@ -1,0 +1,49 @@
+/* RESET */
+:root {
+	--primary-color: #000;
+	--yellow: #ffc400;
+	--red: #f56969;
+	--pink: #f759a8;
+	--violet: #b37dfd;
+	--blue: #55b7ff;
+	--green: #45dd74;
+	--light-yellow: rgba(255, 196, 0, 0.4);
+	--light-red: rgba(245, 105, 105, 0.4);
+	--light-pink: rgba(247, 89, 168, 0.4);
+	--light-violet: rgba(178, 125, 253, 0.4);
+	--light-blue: rgba(85, 184, 255, 0.4);
+	--light-green: rgba(69, 221, 117, 0.4);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
