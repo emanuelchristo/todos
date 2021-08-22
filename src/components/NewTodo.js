@@ -70,7 +70,7 @@ function NewTodo({ onCancel, onCreate, onEdit, edit, todo, groups, selectedGroup
 	useEffect(() => {
 		if (deadlineExists) dateTimeInput.current.value = formatDateTime(todo.deadline)
 		else setDateTime('')
-	}, [deadlineExists])
+	}, [deadlineExists, todo])
 
 	// Verifying inputs
 	useEffect(() => {

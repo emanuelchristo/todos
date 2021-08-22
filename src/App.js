@@ -120,13 +120,6 @@ function App() {
 		})
 	}
 
-	function refreshSelectedGroup() {
-		setSelectedGroup({
-			id: selectedGroup.id,
-			...groups[selectedGroup.id],
-		})
-	}
-
 	function handleCreateNewTodo(todo) {
 		const newAllTodos = [...allTodos, { id: uuidv4(), ...todo }]
 		setAllTodos(newAllTodos)
@@ -170,15 +163,6 @@ function App() {
 		window.location.reload()
 	}
 
-	function updateDisplayTodos() {
-		setDisplayTodos(
-			allTodos.filter((todo) => {
-				if (selectedGroup.id === 'all' || selectedGroup.id === todo.groupId) return todosType === (todo.complete ? 'complete' : 'incomplete')
-				return false
-			})
-		)
-	}
-
 	useEffect(() => {
 		//Checking if mobile device
 		setIsMobile(window.matchMedia('only screen and (max-width: 880px)').matches)
@@ -191,7 +175,12 @@ function App() {
 	}, [])
 
 	useEffect(() => {
-		updateDisplayTodos()
+		setDisplayTodos(
+			allTodos.filter((todo) => {
+				if (selectedGroup.id === 'all' || selectedGroup.id === todo.groupId) return todosType === (todo.complete ? 'complete' : 'incomplete')
+				return false
+			})
+		)
 	}, [allTodos, todosType, selectedGroup, sort])
 
 	useEffect(() => {
@@ -199,7 +188,6 @@ function App() {
 	}, [allTodos])
 
 	useEffect(() => {
-		refreshSelectedGroup()
 		window.localStorage.setItem('groups', JSON.stringify(groups))
 	}, [groups])
 

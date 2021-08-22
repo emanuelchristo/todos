@@ -32,7 +32,7 @@ function NewGroup({ onCancel, onCreate, onEdit, edit, group }) {
 		setGroupName(group.name)
 		setColor(group.color)
 		groupNameInput.current.value = group.name
-	}, [group.name, group.color])
+	}, [group.name, group.color, edit])
 
 	useEffect(() => {
 		setDisabled(!validateGroupName(groupName))
