@@ -12,3 +12,29 @@
 	flex-flow: column;
 	height: 100vh;
 }
+
+.top-buttons-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.top-buttons-wrapper .right {
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 1100px) {
+	.margin {
+		padding: 0 2rem;
+	}
+	body {
+		font-size: 0.9rem;
+	}
+	.todo {
+		padding: 1rem 1.5rem;
+	}
+	select {
+		font-size: 0.9rem;
+	}
+}

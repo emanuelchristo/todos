@@ -6,7 +6,9 @@ function GroupMenuItem({ groupId, group, onClick }) {
 	}
 	return (
 		<div className="group-menu-item" onClick={handleClick}>
-			<span className={`iconify folder-icon ${group.color}-color`} data-icon="mdi:folder"></span>
+			<div className={`icon-wrapper ${group.color}-color`}>
+				<span className="iconify folder-icon" data-icon="mdi:folder"></span>
+			</div>
 			<p className="group-name">{group.name}</p>
 		</div>
 	)

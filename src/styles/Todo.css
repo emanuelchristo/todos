@@ -15,6 +15,7 @@
 
 .description-wrapper {
 	margin-right: 1.5rem;
+	flex: 3;
 }
 
 .description {
@@ -24,6 +25,8 @@
 .time-wrapper {
 	flex-shrink: 0;
 	margin-right: 1.5rem;
+	flex: 1;
+	min-width: 150px;
 }
 
 .date-time {
@@ -33,6 +36,8 @@
 .group-tag-wrapper {
 	flex-shrink: 0;
 	margin-right: 1.5rem;
+	flex: 1;
+	min-width: 120px;
 }
 
 .group-tag {
@@ -40,6 +45,7 @@
 	padding: 0.5rem;
 	border-radius: 0.25rem;
 	user-select: none;
+	display: inline;
 	background-color: var(--light-yellow);
 }
 

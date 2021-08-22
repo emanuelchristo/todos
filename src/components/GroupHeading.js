@@ -1,16 +1,33 @@
 import '../styles/GroupHeading.css'
 
-function GroupMenuItem({ group }) {
+function GroupHeading({ group, onEdit, onDelete }) {
+	function handleEditClick() {
+		onEdit(group)
+	}
+	function handleDeleteClick() {
+		onDelete(group)
+	}
 	return (
 		<div className="group-heading-container">
-			<span className={`iconify folder-icon ${group.color}-color`} data-icon="mdi:folder"></span>
+			<div className={`icon-wrapper ${group.color}-color`}>
+				<span className="iconify folder-icon" data-icon="mdi:folder"></span>
+			</div>
 			<h2>{group.name}</h2>
-			<span className="iconify edit-icon" data-icon="mdi:pencil"></span>
+			{group.id !== 'all' && (
+				<div className="icon-wrapper" onClick={handleEditClick}>
+					<span className="iconify edit-icon" data-icon="mdi:pencil"></span>
+				</div>
+			)}
+			{group.id !== 'all' && (
+				<div className="icon-wrapper" onClick={handleDeleteClick}>
+					<span className="iconify edit-icon" data-icon="mdi:trash"></span>
+				</div>
+			)}
 		</div>
 	)
 }
 
-GroupMenuItem.defaultProps = {
+GroupHeading.defaultProps = {
 	group: {
 		id: '',
 		name: '--',
@@ -18,4 +35,4 @@ GroupMenuItem.defaultProps = {
 	},
 }
 
-export default GroupMenuItem
+export default GroupHeading

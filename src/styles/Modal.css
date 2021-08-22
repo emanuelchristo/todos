@@ -54,3 +54,7 @@
 .modal-actions .success:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
+
+.modal-actions .success:disabled {
+	background-color: rgba(0, 0, 0, 0.5);
+}

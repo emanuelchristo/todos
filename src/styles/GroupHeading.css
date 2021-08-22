@@ -1,6 +1,7 @@
 .group-heading-container {
 	display: flex;
 	align-items: center;
+	/* justify-content: space-between; */
 	flex-shrink: 0;
 }
 
@@ -11,8 +12,9 @@
 .group-heading-container .edit-icon {
 	font-size: 1.5rem;
 	margin-left: 1rem;
-	color: #000;
+	color: rgb(194, 194, 194);
 	cursor: pointer;
+	flex-shrink: 0;
 	position: relative;
 	transition: 0.15s ease all;
 }

@@ -1,6 +1,6 @@
 import '../styles/Modal.css'
 
-function Modal({ onCancel, children }) {
+function Modal({ onCancel, onSuccess, disabled, customSuccess, children }) {
 	return (
 		<div className="modal-shade">
 			<div className="modal-bg">
@@ -10,7 +10,9 @@ function Modal({ onCancel, children }) {
 						Cancel
 					</button>
 					<div style={{ width: '1rem' }}></div>
-					<button className="success">Create</button>
+					<button className={`success`} disabled={disabled} onClick={onSuccess}>
+						{customSuccess ? customSuccess : 'Create'}
+					</button>
 				</div>
 			</div>
 		</div>

@@ -43,6 +43,12 @@
 	margin-right: 0.5rem;
 }
 
+.cross {
+	transform: rotate(45deg);
+	transform-origin: 7px 8px;
+	color: var(--red);
+}
+
 .datetime-picker {
 	font-size: 0.9rem;
 	margin-top: 1rem;

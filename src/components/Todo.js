@@ -1,10 +1,7 @@
 import '../styles/Todo.css'
-import { useState } from 'react'
 import Checkbox from './Checkbox'
 
-function Todo({ todo, groups, onCheck }) {
-	const [value, setValue] = useState(false)
-
+function Todo({ todo, groups, onEdit, onCheck, onDelete }) {
 	function formatDeadline(datetime) {
 		if (!datetime) return '--'
 		const d = new Date(datetime)
@@ -20,6 +17,12 @@ function Todo({ todo, groups, onCheck }) {
 
 	function handleCheck() {
 		onCheck(todo.id)
+	}
+	function handleEdit() {
+		onEdit(todo)
+	}
+	function handleDelete() {
+		onDelete(todo.id)
 	}
 
 	return (
@@ -37,8 +40,12 @@ function Todo({ todo, groups, onCheck }) {
 				<p className={`group-tag group-tag-${groups[todo.groupId].color}`}>{groups[todo.groupId] ? groups[todo.groupId].name : '--'}</p>
 			</div>
 			<div className="todo-actions-wrapper">
-				<span className="iconify delete-icon" data-icon="mdi:trash"></span>
-				<span className="iconify edits-icon" data-icon="mdi:pencil"></span>
+				<div className="icon-wrapper" onClick={handleDelete}>
+					<span className="iconify delete-icon" data-icon="mdi:trash-outline"></span>
+				</div>
+				<div className="icon-wrapper" onClick={handleEdit}>
+					<span className="iconify edits-icon" data-icon="mdi:pencil-outline"></span>
+				</div>
 			</div>
 		</div>
 	)

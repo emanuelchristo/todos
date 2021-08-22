@@ -1,7 +1,7 @@
 .sidenav {
 	width: 25vw;
 	height: 100vh;
-	min-width: 320px;
+	min-width: 300px;
 	border-right: 1px solid var(--border-color);
 	display: flex;
 	flex-flow: column;
@@ -78,4 +78,10 @@
 	padding: 0 2.5rem;
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 1100px) {
+	.sidenav {
+		width: 300px;
+	}
 }
