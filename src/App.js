@@ -24,7 +24,7 @@ function App() {
 	const [isMobile, setIsMobile] = useState(false)
 
 	const [todosType, setTodosType] = useState('incomplete')
-	const [sort, setSort] = useState('deadline')
+	const [sort, setSort] = useState('dateAdded')
 	const [showNewGroup, setShowNewGroup] = useState(false)
 	const [showNewTodo, setShowNewTodo] = useState(false)
 	const [showDeleteGroup, setShowDeleteGroup] = useState(false)
