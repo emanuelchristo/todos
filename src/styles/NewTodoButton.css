@@ -9,6 +9,8 @@
 	font-size: 0.95rem;
 	outline: none;
 	cursor: pointer;
+	width: fit-content;
+	flex-shrink: 0;
 	position: relative;
 	transition: 0.15s ease all;
 }

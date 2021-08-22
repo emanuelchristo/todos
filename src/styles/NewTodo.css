@@ -1,0 +1,59 @@
+.new-todo-heading {
+	display: flex;
+	align-items: center;
+}
+
+.new-todo-heading .todo-icon {
+	font-size: 1.8rem;
+	margin-right: 0.5rem;
+}
+
+.todo-description-input {
+	width: 100%;
+	margin: 2rem 0 1.5rem 0;
+}
+
+.add-deadline-button {
+	padding: 0.7rem 1.5rem;
+	background-color: #fff;
+	border: 1px solid var(--border-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	font-size: 0.85rem;
+	outline: none;
+	cursor: pointer;
+	width: fit-content;
+	flex-shrink: 0;
+	position: relative;
+	transition: 0.15s ease all;
+}
+
+.add-deadline-button:hover {
+	background-color: var(--outline-button-hover-color);
+}
+
+.add-deadline-button:active {
+	top: 2px;
+}
+
+.add-deadline-icon {
+	font-size: 1.1rem;
+	margin-right: 0.5rem;
+}
+
+.datetime-picker {
+	font-size: 0.9rem;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.group-label {
+	font-weight: 600;
+}
+
+.todo-group-select {
+	width: 100%;
+	margin-bottom: 2rem;
+}

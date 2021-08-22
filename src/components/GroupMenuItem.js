@@ -1,10 +1,13 @@
 import '../styles/GroupMenuItem.css'
 
-function GroupMenuItem({ group }) {
+function GroupMenuItem({ groupId, group, onClick }) {
+	function handleClick() {
+		onClick(groupId)
+	}
 	return (
-		<div className="group-menu-item">
+		<div className="group-menu-item" onClick={handleClick}>
 			<span className={`iconify folder-icon ${group.color}-color`} data-icon="mdi:folder"></span>
-			{group.name}
+			<p className="group-name">{group.name}</p>
 		</div>
 	)
 }

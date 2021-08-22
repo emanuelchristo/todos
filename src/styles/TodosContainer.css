@@ -1,0 +1,6 @@
+.todos-container {
+	display: flex;
+	flex-flow: column;
+	flex: 1;
+	overflow: scroll;
+}

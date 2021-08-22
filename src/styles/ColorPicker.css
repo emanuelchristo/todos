@@ -1,0 +1,61 @@
+.color-picker {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.color {
+	width: 1.75rem;
+	height: 1.75rem;
+	cursor: pointer;
+	background-color: var(--yellow);
+	border-radius: 0.25rem;
+}
+
+.color-border {
+	padding: 0.25rem;
+	display: flex;
+	width: fit-content;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.4rem;
+	background-color: var(--light-yellow);
+}
+
+.color-yellow {
+	background: var(--yellow);
+}
+.color-red {
+	background: var(--red);
+}
+.color-pink {
+	background: var(--pink);
+}
+.color-violet {
+	background: var(--violet);
+}
+.color-blue {
+	background: var(--blue);
+}
+.color-green {
+	background: var(--green);
+}
+
+.color-border-yellow {
+	background-color: var(--light-yellow);
+}
+.color-border-red {
+	background-color: var(--light-red);
+}
+.color-border-pink {
+	background-color: var(--light-pink);
+}
+.color-border-violet {
+	background-color: var(--light-violet);
+}
+.color-border-blue {
+	background-color: var(--light-blue);
+}
+.color-border-green {
+	background-color: var(--light-green);
+}

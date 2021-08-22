@@ -1,0 +1,56 @@
+.modal-shade {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-bg {
+	min-height: 100px;
+	width: 350px;
+	padding: 2.5rem;
+	background-color: #fff;
+	border-radius: 1rem;
+	border: 1px solid var(--border-color);
+	display: flex;
+	flex-flow: column;
+}
+
+.modal-actions {
+	display: flex;
+}
+
+.modal-actions button {
+	width: 50%;
+	height: 50px;
+	font-size: 0.9rem;
+	background: #fff;
+	border: 1px solid var(--border-color);
+	border-radius: 0.3rem;
+	cursor: pointer;
+	position: relative;
+	transition: 0.15s ease all;
+}
+
+.modal-actions button:active {
+	top: 2px;
+}
+
+.modal-actions .cancel:hover {
+	background: var(--outline-button-hover-color);
+}
+
+.modal-actions .success {
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+}
+
+.modal-actions .success:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}

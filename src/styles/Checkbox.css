@@ -1,0 +1,22 @@
+.checkbox {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+	box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--border-color);
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+}
+
+.checked {
+	box-shadow: none;
+	border: none;
+	background-color: var(--primary-color);
+}
+
+.tick {
+	color: #fff;
+	font-size: 1rem;
+}
