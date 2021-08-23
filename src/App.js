@@ -77,6 +77,7 @@ function App() {
 		const newGroups = { ...groups }
 		newGroups[info.id] = { name: info.name, color: info.color }
 		setGroups(newGroups)
+		setSelectedGroup({ id: info.id, name: info.name, color: info.color })
 		setShowNewGroup(false)
 		setEditGroup(false)
 		setEditGroupInfo({})
